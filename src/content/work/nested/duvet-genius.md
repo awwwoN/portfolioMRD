@@ -20,7 +20,7 @@ Exemple ci-dessous (les images en dessous ne sont pas présentes sur le site) :
 
 Image 1
 
-![alt text](/public/assets/SatiSymfony/lingot-de-cuivre.png)
+![alt text](/assets/SatiSymfony/lingot-de-cuivre.png)
 
 Une fois un lingot de cuivre obtenue, on peut ensuite le re-transformer !
 
@@ -29,7 +29,7 @@ Exemple ci-dessous (les images en dessous ne sont pas présentes sur le site) :
 
 Image 2  
 
-![alt text](/public/assets/SatiSymfony/fil-electrique.png)
+![alt text](/assets/SatiSymfony/fil-electrique.png)
 Pour effectuer ces calculs, j'ai d'abord établi un cahier des charges afin de déterminer les ressources nécessaires à la création de mon site. 
 Ce processus s'est réparti en quatre étapes :
 
@@ -44,7 +44,7 @@ Comme mentionné précédemment, j'ai dû commencer par créer une base de donn�
 
 Image 3  
 
-![alt text](/public/assets/SatiSymfony/diagramBDD.png)
+![alt text](/assets/SatiSymfony/diagramBDD.png)
 
 On a donc les ressources qui sont tous les matériaux que le joueur peut récolter sur la carte du jeu.
 Ensuite, on a les bâtiments qui sont utilisés par le joueur afin de créer de nouvelles ressources (voir image 1 et 2.)
@@ -63,15 +63,15 @@ de modifier celles déjà existantes et de les supprimer facilement.
 
 Image 4  
 
-![alt text](/public/assets/SatiSymfony/formulaireRessources.png)  
+![alt text](/assets/SatiSymfony/formulaireRessources.png)  
 
 Image 5  
 
-![alt text](/public/assets/SatiSymfony/editRessources.png)  
+![alt text](/assets/SatiSymfony/editRessources.png)  
 
 Image 6  
 
-![alt text](/public/assets/SatiSymfony/createRessources.png)
+![alt text](/assets/SatiSymfony/createRessources.png)
 
 
 Les trois images ci-dessus illustrent les formulaires utilisés pour les ressources, tandis que ceux des bâtiments sont assez similaires. 
@@ -86,7 +86,7 @@ Voici à quoi ressemble le formulaire de recette :
 
 Image 7  
 
-![alt text](/public/assets/SatiSymfony/createRecipe.png)  
+![alt text](/assets/SatiSymfony/createRecipe.png)  
 
 Celui est un peu plus complexe, on peut voir que le formulaire comporte :
 
@@ -110,7 +110,7 @@ L'application effectue ainsi le calcul du nombre de ressources demandées en ent
 
 Image 8  
 
-![alt text](/public/assets/SatiSymfony/recipe.png)
+![alt text](/assets/SatiSymfony/recipe.png)
 
 Troisième étape :
 
@@ -119,7 +119,7 @@ Nous avons déjà eu un aperçu de ce que devrait donner cette étape précédem
 L'objectif de cette étape est d'obtenir un rendu clair des recettes et de leur coût en ressources par minute. Pour enrichir les données, 
 j'ai décidé d'ajouter quatre formulaires différents pour le rendu.
 
-Les formulaire dans l'ordre sont :
+Les formulaires dans l'ordre sont :
 
 - Un formulaire prenant en compte le nombre de bâtiments que je compte utiliser.
 - Un formulaire prenant en compte le nombre de ressources en entrée que je veux utiliser.
