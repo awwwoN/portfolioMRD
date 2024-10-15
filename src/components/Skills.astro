@@ -5,18 +5,27 @@ import Icon from './Icon.astro';
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Full Stack</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+		<h2>Back-End</h2>
+		<p>
+			Porté par mon intérêt pour la logique et l'efficacité, je me suis orienté vers le développement back-end,
+			un domaine qui me permet d'exprimer pleinement mes compétences tout en réalisant des objectifs de plus en plus complexes.
+		</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Industry Leader</h2>
-		<p>Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.</p>
+		<Icon icon="pencil-line" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Autonome</h2>
+		<p>
+			Après mes études, j'ai pris l'initiative de développer mes compétences de manière autonome,
+			ce qui m'a permis d'améliorer significativement mes capacités techniques et professionnelles.
+			Je suis totalement à l'aise avec le fait de	travailler de manière indépendante.
+		</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Strategy-Minded</h2>
-		<p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
+		<Icon icon="sun" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Communication</h2>
+		<p>
+			Je suis attentif aux autres et j’accueille les retours avec ouverture, car ils me permettent de grandir et de m’améliorer.
+		</p>
 	</div>
 </section>
 
@@ -41,6 +50,7 @@ import Icon from './Icon.astro';
 
 	.skills p {
 		color: var(--gray-400);
+		text-align: justify;
 	}
 
 	@media (min-width: 50em) {
@@ -59,4 +69,5 @@ import Icon from './Icon.astro';
 			font-size: var(--text-2xl);
 		}
 	}
+
 </style>

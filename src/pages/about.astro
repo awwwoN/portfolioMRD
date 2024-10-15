@@ -1,120 +1,195 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout title="A propos" description="A propos de moi !">
+    <div class="stack gap-20">
+        <main class="wrapper about">
+            <Hero
+                    title="A propos"
+                    tagline="Place aux présentations !"
+            >
+            </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+            <section>
+                <h2 class="section-title">Mon parcours</h2>
+                <div class="content">
+                    <p>
+                        Depuis toujours passionné par les ordinateurs et leur fonctionnement, j'ai naturellement orienté mes études vers la filière technologique.
+                        Après le collège, j'ai intégré le lycée Benjamin Franklin pour préparer un bac STI2D, où j'ai fait mes premiers pas dans le monde du développement
+                        à travers des projets avec Arduino. Mon projet phare portait sur la mobilité d'une petite voiture, dont j'étais responsable de la programmation pour
+                        la faire avancer, reculer et se déplacer latéralement.
+                    </p><br/>
+                    <p>
+                        Au cours de mes études supérieures, j'ai découvert de nouveaux langages comme PHP, Java, HTML et CSS, ainsi que des frameworks puissants tels qu'Angular et Symfony.
+                        Créer des sites web en HTML/CSS était une expérience enrichissante, mais c'est l'intégration de fonctionnalités complexes grâce à PHP qui a véritablement révélé ma
+                        passion pour le développement back-end.
+                    </p><br/>
+                    <p>
+                        Après avoir terminé mes études, j'ai cherché un poste de développeur web junior orienté back-end, avec une spécialisation en PHP et Symfony. Bien que mes recherches
+                        n'aient pas abouti immédiatement, j'ai dû accepter un emploi dans un autre secteur pour répondre à mes obligations financières. Malgré cette parenthèse, je suis resté
+                        actif en développant plusieurs projets personnels au cours de ces deux dernières années, que je vous invite à découvrir <a href="/work">ici</a>.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title">Scolarité</h2>
+                <div class="content">
+                    <ul>
+                        <li><b>Licence L3 MIAGE</b> - 2022 (Université d'Orléans)</li>
+                        <li><b>BTS SIO option SLAM (Solutions Logicielles et Applications Métier)</b> - 2021 (Lycée Benjamin Franklin)</li>
+                        <li><b>Bac STI2D Mention Assez Bien</b> - 2019 (Lycée Benjamin Franklin)</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title">Compétences</h2>
+                <div class="content">
+                    <div class="container">
+                        <div class="skills php">PHP</div>
+                    </div>
 
-		<ContactCTA />
-	</div>
+                    <div class="container">
+                        <div class="skills html">HTML</div>
+                    </div>
+
+                    <div class="container">
+                        <div class="skills css">CSS</div>
+                    </div>
+
+                    <div class="container">
+                        <div class="skills js">JavaScript</div>
+                    </div>
+
+                    <div class="container">
+                        <div class="skills mysql">MYSQL</div>
+                    </div>
+
+                    <div class="container">
+                        <div class="skills symfony">Symfony</div>
+                    </div>
+
+                    <div class="container">
+                        <div class="skills java">Java</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+    img {
+        margin-top: 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: var(--shadow-md);
+    }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: var(--gray-200);
+    }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+    .section-title {
+        grid-column-start: 1;
+        font-size: var(--text-xl);
+        color: var(--gray-0);
+    }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+    .content {
+        grid-column: 2 / 4;
+    }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+    .content p {
+        text-align: justify;
+    }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+    .content :global(a) {
+        text-decoration: 1px solid underline transparent;
+        text-underline-offset: 0.25em;
+        transition: text-decoration-color var(--theme-transition);
+    }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+    .content :global(a:hover),
+    .content :global(a:focus) {
+        text-decoration-color: currentColor;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    @media (min-width: 50em) {
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 60% 1fr;
+        }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+        .about > :global(:first-child) {
+            grid-column-start: 2;
+        }
+
+        section {
+            display: contents;
+            font-size: var(--text-lg);
+        }
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    .container {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .skills {
+        text-align: left;
+        padding: 10px;
+        color: white;
+        background: var(--gradient-accent-orange);
+        border-radius: 20px;
+    }
+
+    .php {
+        width: 65%;
+    }
+
+    .html {
+        width: 90%;
+
+    }
+
+    .css {
+        width: 80%;
+
+    }
+
+    .js {
+        width: 40%;
+
+    }
+
+    .mysql {
+        width: 60%;
+
+    }
+
+    .symfony {
+        width: 40%;
+
+    }
+
+    .java {
+        width: 70%;
+
+    }
+
 </style>
