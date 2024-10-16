@@ -4,7 +4,7 @@ publishDate: 2023-05-07 00:00:00
 img: /assets/SatiSymfony/satisfactory_cover.jpeg
 img_alt: Image du jeu Satisfactory
 description: |
-  Cette outil de calcul permet d'optimiser la gestion des usines que je construis dans le jeu vidéo Satisfactory.
+  Cet outil de calcul permet d'optimiser la gestion des usines que je construis dans le jeu vidéo Satisfactory.
 tags:
   - Design
   - Dev
@@ -13,19 +13,19 @@ tags:
 
 Au cours de l'année 2023, j'ai beaucoup joué au jeu vidéo Satisfactory. C'est un jeu de construction d'usines en monde ouvert à la première personne, avec une touche d'exploration et de combat.
 
-J'ai créé ce projet dans l'optique de ne pas avoir à me prendre la tête avec les calculs simple mais surtout redondant du jeu.
+J'ai créé ce projet dans le but d'automatiser les calculs simples, mais surtout répétitifs, du jeu.
 Dans ce jeu, vous pouvez récupérer des ressources brutes et les transformer en de nouvelles ressources.
 
-Exemple ci-dessous (les images en dessous ne sont pas présentes sur le site) :  
+Exemple ci-dessous :  
 
 
 Image 1
 
 ![alt text](/assets/SatiSymfony/lingot-de-cuivre.png)
 
-Une fois un lingot de cuivre obtenue, on peut ensuite le re-transformer !
+Une fois un lingot de cuivre obtenu, on peut ensuite le re-transformer !
 
-Exemple ci-dessous (les images en dessous ne sont pas présentes sur le site) :  
+Exemple ci-dessous :  
 
 
 Image 2  
@@ -36,8 +36,8 @@ Ce processus s'est réparti en quatre étapes :
 
 - Première étape : création de la base de données
 - Deuxième étape : création des formulaires
-- Troisième étape : résultats des formulaires sous version simplifiés
-- Quatrième étape : résultats des formulaires sous version détaillés 
+- Troisième étape : résultats simplifiés des formulaires 
+- Quatrième étape : résultats détaillés des formulaires  
 
 Première étape :
 
@@ -47,9 +47,9 @@ Image 3
 
 ![alt text](/assets/SatiSymfony/diagramBDD.png)
 
-On a donc les ressources qui sont tous les matériaux que le joueur peut récolter sur la carte du jeu.
+Pour commencer, il y a les ressources : les matériaux que le joueur peut récolter sur la carte du jeu.
 Ensuite, on a les bâtiments qui sont utilisés par le joueur afin de créer de nouvelles ressources (voir image 1 et 2.)
-Pour finir, on a les recettes, quand le joueur créer un nouvel objet grâce à un bâtiment, il a besoin d'une recette pour savoir comment le créer. (Voir image 2)
+Pour finir, on a les recettes : quand le joueur créer un nouvel objet grâce à un bâtiment, il a besoin d'une recette pour savoir comment le créer. (Voir image 2)
 
 Deuxième étape :
 
@@ -76,7 +76,7 @@ Image 6
 
 
 Les trois images ci-dessus illustrent les formulaires utilisés pour les ressources, tandis que ceux des bâtiments sont assez similaires. 
-Cependant, ma base de données se compose de trois tables, dont la dernière intègre un formulaire un peu plus complexe.
+Cependant ma base de données se compose de trois tables, dont la dernière (celle des recettes) intègre un formulaire un peu plus complexe que je vais expliquer ci-dessous.
 
 Une recette se compose de la sorte :
 
@@ -100,14 +100,14 @@ Celui est un peu plus complexe, on peut voir que le formulaire comporte :
 - Le bâtiment utilisé
 - Le temps qu'un objet met à être produit 
 
-Une fois la recette crée, mon application fait les calculs afin de trouver les ressources en entrée et en sortie nécessaire en 1 min.  
+Une fois la recette créée, mon application fait les calculs afin de trouver les ressources en entrée et en sortie nécessaire en 1 min.  
 Le dernier paramètre est très important, si on reprend l'exemple de l'image 1 :  
 
 1 minerai de cuivre se transforme en 1 lingot de cuivre en 2 secondes.  
 
 L'application effectue ainsi le calcul du nombre de ressources demandées en entrée et en sortie sur une période d'une minute, ce qui donne :
 
-30 minerai de cuivre -> 30 lingot de cuivre en 1 minute.
+30 minerais de cuivre -> 30 lingots de cuivre en 1 minute.
 
 Image 8  
 
@@ -127,9 +127,9 @@ Les formulaires dans l'ordre sont :
 - Un formulaire prenant en compte le nombre de ressources en sortie que je compte utiliser.
 - L'énergie totale que je souhaite allouer à la création d'une ressource en particulier.
 
-Précision, les bâtiments consomme de l'électricité, ce qui est aussi pris en compte dans les calculs précedent (surtout utile pour le quatrième formulaire).
+Précision : les bâtiments consomment de l'électricité, ce qui est aussi pris en compte dans les calculs précédents (surtout utile pour le quatrième formulaire).
 
-Les résultats n'étant pas toujours rond, j'ai ajouté la possibilité de :
+Les résultats n'étant pas toujours ronds, j'ai ajouté la possibilité de :
 - Garder les résultats bruts
 - Arrondir les résultats au supérieur
 - Arrondir les résultats à l'inférieur  
@@ -160,7 +160,7 @@ Image 11
 ![alt text](/assets/SatiSymfony/cableEstimationPlus.png)
 
 On en conclu donc que :  
-Pour l'utilisation de 5 bâtiments créant des câbles, on a besoin de 300 wire (fil électrique) et on obtient 150 câbles.
+Pour l'utilisation de 5 bâtiments créant des câbles, on a besoin de 300 wires (fils électriques) et on obtient 150 câbles.
 Et pour créer 300 fils électriques, on a besoin de 150 lingots de cuivre ainsi que de 10 bâtiments consommant 40 KWh.
 Et pour finir, afin de créer 150 lingots de cuivre, on a besoin de 150 minerais de cuivre (non affichée car c'est une ressource naturelle)
 ainsi que de 5 bâtiments consommant 80 KWh.
