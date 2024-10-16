@@ -14,7 +14,7 @@ tags:
 
 Au cours de l'année 2023, j'ai beaucoup joué au jeu vidéo Satisfactory. C'est un jeu de construction d'usines en monde ouvert à la première personne, avec une touche d'exploration et de combat.
 
-J'ai créer ce projet dans l'optique de ne pas avoir à me prendre la tête avec les calculs simple mais surtout redondant du jeu.
+J'ai créé ce projet dans l'optique de ne pas avoir à me prendre la tête avec les calculs simple mais surtout redondant du jeu.
 Dans ce jeu, vous pouvez récupérer des ressources brutes et les transformer en de nouvelles ressources.
 
 Exemple ci-dessous (les images en dessous ne sont pas présentes sur le site) :  
