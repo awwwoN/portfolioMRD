@@ -9,7 +9,6 @@ tags:
   - Design
   - Dev
   - Back-End
-  - Video games
 ---
 
 Au cours de l'année 2023, j'ai beaucoup joué au jeu vidéo Satisfactory. C'est un jeu de construction d'usines en monde ouvert à la première personne, avec une touche d'exploration et de combat.
